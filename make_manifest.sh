@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wav_path=~/databases/laboroTV_wav/wav/
+wav_path="/mnt/WDB_SSD/database/laboro_wav/"
 manifest_dist=./datas/manifest
 
 
