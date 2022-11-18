@@ -6,22 +6,19 @@ common:
     log_interval: 200
 
 checkpoint:
-    restore_file: "/home/kinouchi/Documents/wav2vec_acoustic_training/outputs/csj_pretrained/checkpoints/checkpoint_best.pt"
     save_interval_updates: 25000
     keep_interval_updates: 1
     no_epoch_checkpoints: true
-    patience: 5
 
 task:
     _name: audio_pretraining
     data: ???
     max_sample_size: 400000
     min_sample_size: 16000
-    normalize: true
+    normalize: false
 
 dataset:
-    batch_size: 8
-    num_workers: 6
+    num_workers: 12
     max_tokens: 1400000
     skip_invalid_size_inputs_valid_test: true
 
