@@ -25,6 +25,7 @@ def main():
                 l = line.strip().split(" ")
                 dicts[l[0]] = int(l[1])
 
+    # tsvに対応したtranscriptionをtextから取り出して文字数をカウントする処理
     with open(args.tsv, "r") as tsv, open(
         os.path.join(args.output_dir, args.output_name + ".ltr"), "w"
     ) as ltr_out, open(
