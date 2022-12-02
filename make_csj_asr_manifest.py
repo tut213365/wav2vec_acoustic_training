@@ -11,6 +11,7 @@ def main():
     parser.add_argument("tsv")
     parser.add_argument("--output-dir", required=True)
     parser.add_argument("--output-name", required=True)
+    parser.add_argument("--preserve-dict", action="store_false")
     args = parser.parse_args()
 
     os.makedirs(args.output_dir, exist_ok=True)
@@ -65,8 +66,10 @@ def main():
     for k, v in dicts.items():
         dict_list.append(f"{k} {v}\n")
 
-    with open(os.path.join(args.output_dir, "dict.ltr.txt"),"w") as d:
-        d.writelines(dict_list)
+    if args.preserve_dict:
+        # fairseq finetuning用のtokenlist
+        with open(os.path.join(args.output_dir, "dict.ltr.txt"),"w") as d:
+            d.writelines(dict_list)
                     
 
 

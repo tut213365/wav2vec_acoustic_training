@@ -1,5 +1,5 @@
 #!/bin/bash
-# snr=とw2v_path=を変更するだけでいい
+# snr=とw2v_path=を変更してSNRを変えながら繰り返し学習する
 snr=0_20
 manifest_dir=/home/katsuaki/wav2vec_acoustic_training/datas/manifest/noisedCSJ/$snr
 w2v_path=/home/katsuaki/wav2vec_acoustic_training/outputs/2022-11-28/11-58-58/checkpoints/checkpoint_best.pt
