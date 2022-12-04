@@ -1,12 +1,5 @@
 
 
-# w2v_path=/home/matsumoto/wav2vec_acoustic_training/outputs/2022-11-22/20-05-53/checkpoints/checkpoint_best.pt #clean音声でCTC_finetuningしたやつ
-# manifest_dir=/home/matsumoto/wav2vec_acoustic_training/datas/manifest/csj # eval用のmanifest
-# # manifest_dir=/home/matsumoto/wav2vec_acoustic_training/datas/manifest/noised_csj # eval用のmanifest
-
-# # noised="" # clean音声を使うときはこっちを有効化
-# noised="noised_" # noise重畳音声を使うときはこっちを有効化 
-
 # eval1-3についてmanifestとdict.Itr.txt生成
 evals=(
     "eval1"

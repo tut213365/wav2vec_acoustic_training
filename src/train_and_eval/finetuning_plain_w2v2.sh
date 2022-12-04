@@ -1,8 +1,4 @@
 
-# (多分)5_20が終わったデータ
-# w2v_path=/home/katsuaki/wav2vec_acoustic_training/outputs/2022-11-28/11-58-58/checkpoints/checkpoint_best.pt
-
-
 fairseq-hydra-train \
 	task.data=$manifest_path \
 	common.wandb_project=$proj_name \
